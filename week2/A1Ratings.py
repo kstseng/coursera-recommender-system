@@ -32,4 +32,9 @@ for col in compare_col:
     percent.append(float(starwars.dot(movie))/sum(starwars))
     
 percent_np = np.array(percent)
-np.argsort(percent_np)
+idx = np.argsort(percent_np)
+compare_col[idx[-1]]
+compare_col[idx[-2]]
+compare_col[idx[-3]]
+compare_col[idx[-4]]
+compare_col[idx[-5]]
